@@ -1,9 +1,36 @@
-PASS ./anagram.test.js
+FAIL ./anagram.test.js
   Anagrams
-    ✓ Should complete execution (3 ms)
+    ✕ Should return an array of words (5 ms)
 
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
+  ● Anagrams › Should return an array of words
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: [""]
+    Received: ""
+
+       5 | describe('Anagrams', () => {
+       6 |   it('Should return an array of words', () => {
+    >  7 |     expect(createAnagrams('')).toEqual(['']);
+         |                                ^
+       8 |   });
+       9 | });
+      10 | 
+
+      at Object.<anonymous> (anagram.test.js:7:32)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.354 s
+Time:        1.384 s
 Ran all test suites.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ test: `jest --coverage`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/sandbox/.npm/_logs/2023-01-27T11_14_26_972Z-debug.log
