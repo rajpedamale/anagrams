@@ -11,5 +11,21 @@
       58,
       768433
     ]
+  },
+  {
+    "duration": 4.070156,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 1,
+    "time": [
+      2023,
+      1,
+      27,
+      11,
+      12,
+      44,
+      486651
+    ]
   }
 ]
