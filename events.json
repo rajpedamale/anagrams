@@ -235,5 +235,21 @@
       13,
       960161
     ]
+  },
+  {
+    "duration": 4.273458,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 15,
+    "time": [
+      2023,
+      1,
+      27,
+      11,
+      33,
+      41,
+      372402
+    ]
   }
 ]
