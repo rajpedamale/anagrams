@@ -7,4 +7,7 @@ describe('Anagrams', () => {
     expect(createAnagrams()).toEqual(['']);
   });
 
+  it('Should return an array of same word for a single letter', () => {
+    expect(createAnagrams('a')).toEqual(['a']);
+  });
 });
