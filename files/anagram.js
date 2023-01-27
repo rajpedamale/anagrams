@@ -1,7 +1,7 @@
 'use strict';
 
 function createAnagrams() {
-  return 6 * 9;
+  return '';
 }
 
 module.exports = createAnagrams;
