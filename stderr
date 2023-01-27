@@ -7,5 +7,5 @@ PASS ./anagram.test.js
 Test Suites: 1 passed, 1 total
 Tests:       3 passed, 3 total
 Snapshots:   0 total
-Time:        1.433 s
+Time:        1.431 s
 Ran all test suites.

@@ -5,7 +5,7 @@ function reverseString(str) {
 }
 
 function isEmptyWord(word) {
-  return typeof word === 'undefined';
+  return typeof word === 'undefined' || typeof word === 'null';
 }
 
 function createAnagrams(word) {
