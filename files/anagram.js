@@ -12,7 +12,7 @@ function createAnagrams(word) {
   const returnArray = isEmptyWord(word) ? ['']: [word];
   if (typeof word === 'string' && word.length > 1) {
     const nextWord = reverseString(word);
-    if (!returnArray.contains(nextWord)) {
+    if (!returnArray.includes(nextWord)) {
       returnArray.push(nextWord);
     }
   }
