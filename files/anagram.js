@@ -1,6 +1,6 @@
 'use strict';
 
-function reverseString(str) {
+function getNextWord(str) {
     return str.split("").reverse().join("");
 }
 
@@ -11,7 +11,7 @@ function isEmptyWord(word) {
 function createAnagrams(word) {
   const returnArray = isEmptyWord(word) ? ['']: [word];
   if (typeof word === 'string' && word.length > 1) {
-    const nextWord = reverseString(word);
+    const nextWord = getNextWord(word);
     if (!returnArray.includes(nextWord)) {
       returnArray.push(nextWord);
     }
