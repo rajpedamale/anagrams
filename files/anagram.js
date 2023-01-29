@@ -1,7 +1,7 @@
 'use strict';
 
-function getNextWord(str) {
-    return str.split("").reverse().join("");
+function getAnagrams(str) {
+    return [str.split("").reverse().join("")];
 }
 
 function isEmptyWord(word) {
@@ -11,10 +11,12 @@ function isEmptyWord(word) {
 function createAnagrams(word) {
   const returnArray = isEmptyWord(word) ? ['']: [word];
   if (typeof word === 'string' && word.length > 1) {
-    const nextWord = getNextWord(word);
-    if (!returnArray.includes(nextWord)) {
-      returnArray.push(nextWord);
-    }
+    const anagrams = getAnagrams(word);
+    anagrams.forEach((anagram) => {
+      if (!returnArray.includes(anagram)) {
+        returnArray.push(anagram);
+      }
+    });
   }
   return returnArray;
 }
