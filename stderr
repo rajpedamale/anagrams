@@ -2,12 +2,12 @@ PASS ./anagram.test.js
   Anagrams
     ✓ Should return an array of words (3 ms)
     ✓ Should return an array of same word for a single letter
-    ✓ Should return an array of 2 for a 2 lettered word (1 ms)
+    ✓ Should return an array of 2 for a 2 lettered word (6 ms)
     ✓ Should return an array of 1 for a 2 lettered word with repeated characters
-    ○ skipped Should return 6 items for a 3 letter word
+    ✓ Should return 6 items for a 3 letter word (1 ms)
 
 Test Suites: 1 passed, 1 total
-Tests:       1 skipped, 4 passed, 5 total
+Tests:       5 passed, 5 total
 Snapshots:   0 total
-Time:        1.446 s
+Time:        1.492 s
 Ran all test suites.
