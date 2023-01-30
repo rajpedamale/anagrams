@@ -14,4 +14,5 @@ describe('Anagrams', () => {
   it('Should return an array of 2 for a 2 lettered word', () => {
     expect(createAnagrams('ab')).toEqual(['ab', 'ba']);
   });
+
 });

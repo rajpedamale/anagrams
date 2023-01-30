@@ -14,8 +14,9 @@ function createAnagrams(word) {
     const remainingChars = word.slice(0,i) + word.slice(i+1);
     const anagrams = createAnagrams(remainingChars);
     anagrams.forEach((anagram) => {
-      if (!returnArray.includes(anagram)) {
-        returnArray.push(anagram);
+      const fullWordAtThisLevel = currentChar + anagram;
+      if (!returnArray.includes(fullWordAtThisLevel)) {
+        returnArray.push(fullWordAtThisLevel);
       }
     });
   }
