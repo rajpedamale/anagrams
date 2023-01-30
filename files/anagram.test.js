@@ -20,4 +20,8 @@ describe('Anagrams', () => {
     expect(createAnagrams('aa')).toEqual(['aa']);
   });
 
+  it.skip('Should return 6 items for a 3 letter word', () => {
+    const expected = ['abc', 'acb', 'bac', 'bca', 'cab', 'cba'];
+    expect(createAnagrams('abc')).toEqual(expected);
+  });
 });
